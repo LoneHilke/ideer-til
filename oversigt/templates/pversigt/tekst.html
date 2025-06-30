@@ -1,0 +1,27 @@
+{% extends 'pversigt/base.html' %}
+
+{% block content %}
+<h1>TEKST NAVIGATION</h1>
+<h3>Ved denne kan man vælge om man kun vil bruge treksten som navigation,<br>
+    eller lave sidehoved og ligge teksten i.</h3><br>
+ <div>
+        <nav class="navbar navbar-light bg-success">
+        <a-navbar type="success" variant="dark">
+          <a-navbar-nav>
+            <a class="navbar-brand mb-0 h1" href="/">Home</a>
+              <a class="navbar-brand mb-0 h1" href="{% url 'tab' %}">Tab</a>
+              <a class="navbar-brand mb-0 h1" href="{% url 'info' %}">Info</a>
+            <a class="navbar-brand mb-0 h1" href= # >Nav/side-bar</a>
+            
+          </a-navbar-nav>
+        </a-navbar>
+                
+    </div>
+    <br>
+    <h3>Eller den kan bruges som her</h3>
+    <br>
+    <ol>
+	<li><a href="/"> Home </a> | <a href="{% url 'tab' %}"> Tab </a> | <a href="{% url 'tekst' %}"> Tekst</a> | <a href="{% url 'rul' %}"> Rul </a> </li>
+        </ol>
+
+{% endblock content %}

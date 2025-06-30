@@ -1,0 +1,20 @@
+{% extends 'pversigt/base.html' %}
+
+{% block content %}
+<h1>KNAPPER SOM NAVIGATION</h1>
+<h3>Knapper kan se ud på mange måder og have mange farver. <br>De kan stilles op og placeres næsten som man vil.</h3>
+<div class="uk-width-auto"> 
+    <button type="submit" class="button soft-warning -ml-2" ><a class="nav-link active" aria-current="page" href="/">Forside</a></button>
+    <button type="submit" class="button soft-warning -ml-2" ><a class="nav-link active" aria-current="page" href="{% url 'tab' %}">Tab</a></button> 
+    <button type="submit" class="button soft-warning -ml-2" ><a class="nav-link active" aria-current="page" href="{% url 'info' %}">Info</a></button>  
+</div>
+<br>
+<div position left>
+
+    <div class="uk-width-auto"> 
+        <button type="submit" class="button soft-warning -ml-2" ><a class="nav-link active" aria-current="page" href="/">Forside</a></button><br>
+        <button type="submit" class="button soft-warning -ml-2" ><a class="nav-link active" aria-current="page" href="{% url 'tab' %}">Tab</a></button> <br>
+        <button type="submit" class="button soft-warning -ml-2" ><a class="nav-link active" aria-current="page" href="{% url 'info' %}">Info</a></button> <br> 
+    </div>
+</div>
+{% endblock content %}

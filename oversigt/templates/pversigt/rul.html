@@ -1,0 +1,81 @@
+{% extends 'pversigt/base.html' %}
+
+{% block content %}
+<h1><font color=green> RUL NAVIGATION </font></h1>
+<h3>Fordelen ved denne navigation er, at der kun skal bruges en html.<br>
+    Det er heller ikke så nemt at fare vild i, da man kan rulle selv, eller via menuen<br>
+Den nye meny er kommet ovenover, så der kan testes</h3>
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section5">Tilbage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section6"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section7"></a>
+            </li>
+          </ul>
+
+          <br>
+        </div>
+        
+      </nav>
+       <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+        
+       <h1><font color=red> Navigation</font></h1>
+        <h3>Navigation er den måde man bevæger sig rundt på hjemme sider</h3>
+        <h6><b><u>BEMÆRK:</u></b>Der er ny menu-bar til denne del.</h6>
+        <br> <!--<p><code>.flex-wrap:</code></p>-->
+        
+       
+  <div class="d-flex flex-wrap bg-warning">
+    <div class="p-2 border"></div>
+       <h3>Navigationen er en vigtig del, hvis man ikke bare vil have en side,<br>
+        som andre kigger på, men flere<7h3>
+       
+    </div>
+<hr>
+        
+       
+
+      </div>  
+
+      <div id="section2" class="container-fluid bg-danger text-white" style="padding:100px 20px;">
+        
+       <h1><font color=green> Bootstrap</font></h1>
+       <h3>Mange af de forskellige måder til navigation kan findes i Bootstrap</h3>
+        <h3>Udover navigation kan der i bootstrap findes meget andet så som card, knap og listeboxe meget andet til at sætte siderne op med</h3>
+        <h4><b><u><a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank" class="nav-link active py-3 border-bottom"> <i class="#"></i> <small>Bootstrap 5</small> </a></u></b></h4>
+      </div>  
+      <div id="section3" class="container-fluid bg-primary text-white" style="padding:100px 20px;">
+        
+        <h1><font color=red> CSS</font></h1>
+         <h3>CSS er en måde til opsætning af sider med farver m.m.<br>Det kan være en del inde i html, bootstrap og andet eller en mappe for sif</h3>
+         <h4><b><u><a href="https://css-tricks.com/" target="_blank" class="nav-link active py-3 border-bottom"> <i class="#"></i> <small>CSS tricks</small> </a></u></b></h4>
+       </div>  
+       <div id="section3" class="container-fluid bg-primary text-white" style="padding:100px 20px;">
+        
+        <h1><font color=red> Tilbage</font></h1>
+         <h3>Gå tilbage til hovedmenuen ved at klikke her</h3>
+         <h4><b><u><a href="/" class="nav-link active py-3 border-bottom"> <i class="#"></i> <small>Tilbage</small> </a></u></b></h4>
+       </div>  
+{% endblock content %}

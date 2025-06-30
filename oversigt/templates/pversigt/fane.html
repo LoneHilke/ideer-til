@@ -1,9 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'pversigt/base.html' %}
 
 {% block content %}
 <h1>Naviger via faner</h1>
 <br>
-<h3>Den navigation er den jeg kalder faner. </h3>
+<h3>Den navigation som er i gennemgående,<br> er den jeg kalder faner. <br>
+Hver fane har sin html, url og view.<br>
+Køres den via 'base.html', skal der kun opdateres på den side, og kun en gang. </h3>
 <br>
 <h4><ul class="nav nav-tabs">
         <li class="nav-item">
@@ -31,7 +33,7 @@
           <a class="nav-link active" aria-current="page" href="#">Fane</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% urls 'info' %}"><font color=red>Info</font></a>
+          <a class="nav-link active" aria-current="page" href="{% url 'info' %}"><font color=red>Info</font></a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true"></a>

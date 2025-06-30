@@ -1,0 +1,91 @@
+{% extends 'pversigt/base.html' %}
+
+{% block content %}
+<h1><i><b>TAB-NAVIGATION</b></i></h1>
+<h3>For at vi tab-navigationen, har jeg sat to ting ind. En fordel her er,<br>
+    at der kun er en html, men det kan også være en ulempe, <br>
+    når der skal holdes styr på <div>  - </div>.
+    Her er der også en ny menu</h3>
+
+ <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home">Python</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Turtle</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Tkinter</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#">Matplotlib</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#">Andet</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu5"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu6"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu7"></a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <!--<link rel="stylesheet" href="style.css">-->
+      <font color="green"><h1 ><b><u>PYTON</u></b></h1></font>
+      
+            <h5>I python er der mange sjove ting man kan lege med.<br>
+                Turtle er et tegne program, som også kan udfylde felter<br>
+                Tkinter er en start til at lave apps<br>
+                Matplotlib er til at lave grafer og diagrammer<br>
+                Det er selvfølgelig kun et meget lille udpluk af hvad der findes, <br> og python kan meget mere end jeg lægger op til her.<br>
+                I den nye navigations bar ligger der links til nogle af de programmer.<br>
+                Her kommer en liste over gode begynder sider og apps.<br>
+              Dem der er som apps, er gode at have med på farten.</h5>
+                <hr>
+            <div class="container mb-1">
+                <div class="row justify-content-center mt-5">
+                  <div class="col-md-11 col-sm-11 p-1">
+                      <div class="row g-3"><!--   -->
+                         
+                          
+                            
+                        
+                          <!--</div>-->
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div id="menu1" class="container tab-pane fade"><br>
+           
+        <h2><b><i><u>Turtle</u></i></b></h2>
+        <h6>Turtle er tegne program, som også kan udfylde felter. <br>Her gælder det om at tegne, og kunne lidt om grader og vinkler, da det er grader som bruges til beregning af,<br>
+            hvor der tegnes.
+           <!-- <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR9pbubGdt4NYk0CPHBGvESAahjsrgHaHgNQ&s>--></h6>
+       
+            <div class="container mb-2">
+              <div class="row justify-content-center mt-2">
+               <div class="col-md-11 col-sm-11 p-1">
+                <div class="row g-5">
+                 <!-- <div class="col-sm-1">-->
+
+
+                
+                </div> 
+            </div>
+            <li class="nav-item"> <a href="https://www.javatpoint.com/python-turtle-programming" target="_blank" class="nav-link active py-3 border-bottom"> <i class="#"></i> <u><strong><small>Turtle</small></strong></u> </a> </li>
+        </div>
+    </div>
+              </div>
+
+{% endblock content %}
