@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'oversigt',
     'whitenoise',
+    'gunicorn',
 ]
 
 MIDDLEWARE = [

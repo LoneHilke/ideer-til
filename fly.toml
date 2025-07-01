@@ -1,10 +1,11 @@
-app = "din-app-navn"
+# fly.toml app configuration file generated for ideer-til-dark-morning-5968 on 2025-06-30T22:55:52+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-[build]
-  builder = "Docker"
+app = "ideer-til"
 
 [env]
-  DJANGO_SETTINGS_MODULE = "dinprojekt.settings"
   DEBUG = "False"
 
 [[services]]
