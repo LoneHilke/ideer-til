@@ -35,4 +35,4 @@ class Side(View):
     
 class Knap(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'pversigt/Knapper.html')
+        return render(request, 'pversigt/knapper.html')
