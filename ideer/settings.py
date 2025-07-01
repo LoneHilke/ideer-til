@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-*71@@lhvum)8fg9y%-!p(mzol-35=u)^b5wc9*9qqf_u47&g&+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ideer-til.fly.dev']
 
 
 # Application definition
